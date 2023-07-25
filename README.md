@@ -1,2 +1,2 @@
 ### Weather App
-#### Built using React.js and openweather API
+#### Built using React.js and openweathermap API
