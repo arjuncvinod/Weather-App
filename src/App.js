@@ -19,6 +19,7 @@ const searchLocation = (event)=>{
 }
 
   return (
+
     <div className="app">
       <div className="search">
         <input
@@ -38,6 +39,7 @@ const searchLocation = (event)=>{
             {data.weather && <p>{data.weather[0].main}°F</p>}
           </div>
         </div>
+        {data.name !== undefined &&
         <div className="bottom">
           <div className="feels">
             {data.main && <p className="bold">{data.main.feels_like}</p>}
@@ -52,6 +54,7 @@ const searchLocation = (event)=>{
             <p>Wind speed</p>
           </div>
         </div>
+        }
       </div>
     </div>
   );
