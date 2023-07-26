@@ -13,42 +13,44 @@ const searchLocation = (event)=>{
     setData(response.data)
     console.log(response.data);
   })
+  setLocation('')
 }
   
 }
 
   return (
     <div className="app">
-    <div className="search">
-    <input type="text" onChange={event=>setLocation(event.target.value)}
-    placeholder="Enter Location" />
-    </div>
+      <div className="search">
+        <input
+          type="text"
+          onChange={(event) => setLocation(event.target.value)}
+          onKeyPress={searchLocation}
+          placeholder="Enter Location"
+        />
+      </div>
       <div className="container">
         <div className="top">
           <div className="location">
-            <p>Dallas</p>
+            <p>{data.name}</p>
           </div>
-          <div className="temp">
-            <h1>60°F</h1>
-          </div>
+          <div className="temp">{data.main && <h1>{data.main.temp}°F</h1>}</div>
           <div className="description">
-            <p>Clouds</p>
+            {data.weather && <p>{data.weather[0].main}°F</p>}
           </div>
         </div>
         <div className="bottom">
           <div className="feels">
-            <p className="bold">65°F</p>
+            {data.main && <p className="bold">{data.main.feels_like}</p>}
             <p>Feels Like</p>
           </div>
           <div className="humidity">
-            <p className="bold">20% </p>
+            {data.main && <p className="bold">{data.main.humidity}</p>}
             <p>Humidity</p>
           </div>
           <div className="wind">
-            <p className="bold">12 MPH</p>
+            {data.wind && <p className="bold">{data.wind.speed}</p>}
             <p>Wind speed</p>
           </div>
-
         </div>
       </div>
     </div>
