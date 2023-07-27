@@ -5,7 +5,7 @@ function App() {
 const[data,setData]=useState({});
 const [location,setLocation]=useState('')
 
-const url =`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=bdc1146c700b7ab3cbbd22c72a75063f`;
+const url =`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=bdc1146c700b7ab3cbbd22c72a75063f`;
 
 const searchLocation = (event)=>{
   if(event.key==="Enter"){
@@ -56,7 +56,7 @@ const searchLocation = (event)=>{
               {data.wind && (
                 <p className="bold">{data.wind.speed.toFixed()} MPH</p>
               )}
-              <p>Wind speed</p>
+              <p>Wind speed</p>  
             </div>
           </div>
         )}
