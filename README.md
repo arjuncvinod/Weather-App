@@ -1,6 +1,6 @@
 ## Weather App
 ### Built using React.js and openweathermap API
-### live demo : https://liveweatherupdates.netlify.app/
+### live demo : [www.liveweather.com](https://liveweatherupdates.netlify.app/)
 ### screenshots:
 
 
