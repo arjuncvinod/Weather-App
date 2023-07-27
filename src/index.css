@@ -76,14 +76,12 @@ h1 {
   width: 100%;
   margin: 1rem auto;
 }
-
 .app .description {
   position: relative;
   right: -90%;
   transform-origin: 0 0;
   transform: rotate(269deg);
 }
-
 .app .bottom {
   display: flex;
   justify-content: space-evenly;
@@ -94,7 +92,6 @@ h1 {
   border-radius: 12px;
   background-color: rgba(255,255,255, 0.2);
 }
-
 .bold {
   font-weight: 700;
 }
