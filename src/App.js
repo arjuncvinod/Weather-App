@@ -42,10 +42,10 @@ const searchLocation = (event)=>{
         </div>
         {data.name !== undefined && (
           <div className="bottom">
-            <div className="feels"> 
+            <div className="feels">
               {data.main && (
                 <p className="bold">{data.main.feels_like.toFixed()}°C</p>
-              )} 
+              )}
               <p>Feels Like</p>
             </div>
             <div className="humidity">
@@ -56,10 +56,16 @@ const searchLocation = (event)=>{
               {data.wind && (
                 <p className="bold">{data.wind.speed.toFixed()} MPH</p>
               )}
-              <p>Wind speed</p>  
+              <p>Wind speed</p>
             </div>
           </div>
         )}
+      </div>
+      <div class="copyright">
+        <p class="made">Made with 🤍 by <a href="https://arjuncvinod.github.io">Arjun</a></p>
+        <p>
+          Copyright &copy; 2023
+        </p>
       </div>
     </div>
   );
