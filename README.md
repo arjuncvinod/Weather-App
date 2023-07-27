@@ -2,8 +2,12 @@
 ### Built using React.js and openweathermap API
 ### live demo : https://liveweatherupdates.netlify.app/
 ### screenshots:
-Desktop view
-![image](https://github.com/arjuncvinod/Weather-App-React/assets/68469520/98f29488-8d3e-4ad9-9a0a-85a0d39458dc) <br>
 
-Mobile view  <br>
-![image](https://github.com/arjuncvinod/Weather-App-React/assets/68469520/14d9ebef-909d-4cd9-899a-7c5071c4f450)
+
+<table>
+  <tr>
+    <td width="30%">Mobile view<img src="https://github.com/arjuncvinod/Weather-App/assets/68469520/1bae88a3-4559-49bd-95b1-b5c69bd72a73"></td>
+    <td>Desktop View<img src="https://github.com/arjuncvinod/Weather-App/assets/68469520/1c5ba0c6-ecf8-4305-86fc-745e480b03a8"></td>
+  </tr>
+</table>
+
