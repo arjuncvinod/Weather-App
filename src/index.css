@@ -51,9 +51,13 @@ h1 {
   padding: .7rem 1.5rem;
   font-size: 1.2rem;
   border-radius: 25px;
-  border: 1px solid rgba(255,255,255, 0.8);
+  border: 1px solid gray;
   background: rgba(255,255,255, 0.1);
   color: #f8f8f8;
+  outline: none;
+}
+.app input:focus{
+  border-color: white;
 }
 
 ::placeholder {
