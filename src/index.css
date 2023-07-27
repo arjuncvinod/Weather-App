@@ -66,7 +66,7 @@ h1 {
 
 .container {
   max-width: 700px;
-  height: 690px;
+  height: 620px;
   margin: auto;
   padding: 0 1rem;
   position: relative;
@@ -98,4 +98,31 @@ h1 {
 }
 .bold {
   font-weight: 700;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copyright p{
+    color: gray;
+    font-size: small;
+}
+.made a{
+  color: white;
+  text-decoration: none;
+  z-index: 1000;
+}
+.made a:hover{
+  color: red;
+}
+.copyright .made{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
 }
